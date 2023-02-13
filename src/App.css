@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.Profile {
+  margin: 0 10em 2em 10em;
+  border-style: solid;
+  border-color: green;
+}
