@@ -1,3 +1,4 @@
+import FrameworkContext from "./FrameworkContext";
 import { useContext } from "react";
 
 function DisplayPicture () {
