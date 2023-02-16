@@ -5,6 +5,7 @@ import Profile from './Profile';
 import DisplayPicture from './DisplayPicture';
 import BugLogTable from './BugLogTable';
 import FrameworkContext from './FrameworkContext';
+import Parent from './Parent';
 
 
 function App() {
@@ -65,6 +66,8 @@ function App() {
           <DisplayPicture />
         </Profile>
       </FrameworkContext.Provider>
+
+      <Parent />
     </div>
   );
 }

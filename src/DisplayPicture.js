@@ -1,7 +1,6 @@
 import FrameworkContext from "./FrameworkContext";
 import { useState, useContext } from "react";
 
-
 function DisplayPicture () {
     const [color, setColor] = useState(0);
     const framework = useContext(FrameworkContext);
