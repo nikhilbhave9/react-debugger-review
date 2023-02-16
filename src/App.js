@@ -17,33 +17,23 @@ function App() {
     {
       id: 1,
       name: 'React useState Bug',
-      date: '2021-01-01',
-      project: 'React',
-      description: 'App crashes on open',
+      date: '2023-10-02',
+      project: 'Debugger Demo',
+      description: 'A syntactical error. Imported useState instead of { useState }',
       severity: 'High',
       priority: 'High',
-      status: 'Open'
+      status: 'Closed'
     },
     {
       id: 2,
-      name: 'React useState Bug',
-      date: '2021-01-01',
-      project: 'React',
-      description: 'App crashes on open',
-      severity: 'High',
+      name: 'React useContext bug',
+      date: '2023-13-02',
+      project: 'Debugger Demo',
+      description: 'Context has to be a separate component/file. Need more research ',
+      severity: 'Low',
       priority: 'High',
-      status: 'Open'
-    },
-    {
-      id: 3,
-      name: 'React useState Bug',
-      date: '2021-01-01',
-      project: 'React',
-      description: 'App crashes on open',
-      severity: 'High',
-      priority: 'High',
-      status: 'Open'
-    },
+      status: 'Closed'
+    }
   ];
 
   return (

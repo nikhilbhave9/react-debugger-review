@@ -1,9 +1,9 @@
 
-function Profile({children}) {
+function Profile() {
     return (
         <div className='Profile'>
             <h1>Profile</h1>
-            {children}
+            {/* {children} */}
             <h2>Name: Donald</h2>
         </div>
     );
