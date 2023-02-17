@@ -1,17 +1,20 @@
 import './App.css';
 import Counter from './Counter';
-import Welcome from './Welcome';
-import Profile from './Profile';
-import DisplayPicture from './DisplayPicture';
 import BugLogTable from './BugLogTable';
-import FrameworkContext from './FrameworkContext';
 import SuspenseParent from './SuspenseParent';
-
+import NavBar from './Navbar';
+import Introduction from './Introduction';
+import Owners from './Owners';
+import Keys from './Keys';
 
 function App() {
 
+  const demonstrateFunc = () => {
+    alert('React Developer Tools!');
+  };
+
   const handleCount = () => {
-    alert('Count Function has been triggered');
+    alert('Welcome!');
   };
 
   const bugLogs = [
@@ -49,18 +52,34 @@ function App() {
 
   return (
     <div className='App'>
-      
-
+      <NavBar />
+      <div className='App-header'>
         <header>
           <h1>
             Bug Log
           </h1>
+          <h2>
+            A simple bug log app to demonstrate debugging in React
+          </h2>
         </header>
 
-        <BugLogTable bugLogs={bugLogs} />
+        {/* Part 1:  Passing Props*/}
 
-        <Welcome num={4} />
+        <Introduction introMessage={"Good afternoon"} names={{ name1: "Vibodh", name2: "Nikhil" }} propFunction={demonstrateFunc} />
 
+        {/* Part 2:  Handling Owners v/s Parents and State*/}
+
+        <Owners />
+
+        {/* Part 3: Handling Keys*/}
+
+        <Keys bugLogs={bugLogs} />
+
+        {/* Part 4: Handling Suspense*/}
+        <SuspenseParent />
+
+        {/* Part 5: Profiler*/}
+        <h3>Part 5: Profiler</h3>
         <Counter
           countVar={0}
           countObject={
@@ -71,13 +90,9 @@ function App() {
           }
           countFunction={handleCount}
         />
-      <FrameworkContext.Provider value="React">
-        <Profile>
-          <DisplayPicture />
-        </Profile>
-      </FrameworkContext.Provider>
 
-      <SuspenseParent />
+
+      </div>
     </div>
   );
 }

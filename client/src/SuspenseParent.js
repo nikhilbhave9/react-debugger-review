@@ -6,7 +6,7 @@ function SuspenseParent() {
 
     return (
         <div>
-            <h2>Suspense</h2>
+            <h3>Part 4: Suspense</h3>
             <Suspense fallback={<div>Loading...</div>}>
                 <SuspenseChild />
             </Suspense>

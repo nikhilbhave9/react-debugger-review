@@ -1,9 +1,7 @@
-import FrameworkContext from "./FrameworkContext";
-import { useState, useContext } from "react";
+import { useState } from "react";
 
 function DisplayPicture () {
     const [color, setColor] = useState(0);
-    const framework = useContext(FrameworkContext);
 
     const handleChangeColor = () => {
         setColor(color + 1);
@@ -23,7 +21,6 @@ function DisplayPicture () {
                 <img src='https://www-cs-faculty.stanford.edu/~knuth/don.gif' alt='Donald Knuth' />
                 <div>
                     <button onClick={handleChangeColor}>Change Color</button>
-                    <p>(PS: I am currently working with {framework})</p>
                 </div>
         </div>
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function BugLogTable(props) {
 
-    const { bugLogs } = props;
+    const bugLogs = props.bugLogs;
 
     return (
         <>
@@ -12,7 +12,7 @@ function BugLogTable(props) {
                         margin-left: auto;
                         margin-right: auto;
                         margin-bottom: 10px;
-                        border:1px solid black;
+                        border:1px solid white;
                         border-collapse: collapse;
                         width: 90%;
                     }
