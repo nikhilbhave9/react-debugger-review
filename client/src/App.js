@@ -47,6 +47,16 @@ function App() {
       severity: 'Medium',
       priority: 'Medium',
       status: 'Open'
+    },
+    {
+      id: 4,
+      name: 'React useMemo bug',
+      date: '2023-14-02',
+      project: 'Debugger Demo',
+      description: 'Lorem ipsum dolor',
+      severity: 'Medium',
+      priority: 'Medium',
+      status: 'Open'
     }
   ];
 
@@ -56,11 +66,8 @@ function App() {
       <div className='App-header'>
         <header>
           <h1>
-            Bug Log
+            A simple app to demonstrate debugging in React
           </h1>
-          <h2>
-            A simple bug log app to demonstrate debugging in React
-          </h2>
         </header>
 
         {/* Part 1:  Passing Props*/}
