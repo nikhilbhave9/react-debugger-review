@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import SlowComponent from './SlowComponent';
 
 function Counter ({countVar, countObject, countFunction}) {
     const [count, setCount] = useState(countObject.startCount);
@@ -9,6 +10,7 @@ function Counter ({countVar, countObject, countFunction}) {
     
     return (
         <div>
+        <SlowComponent />
         <p>The count variable is: {countVar}</p>
         <p>The current {countObject.title} count is: {count}</p>
         <button onClick={handleClick}>
